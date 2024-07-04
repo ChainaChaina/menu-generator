@@ -1,21 +1,34 @@
 <div class="container">
   <h1 class="title">Menu do dia</h1>
-  <canvas *ngIf="menuReady" width="1130" height="1600" style="border:1px solid #000000;" src="src\assets\imgs\card.jpg" id="canvas">
+  <canvas *ngIf="menuReady" width="1414" height="2000" style="border:1px solid #000000;" src="src\assets\imgs\card.jpg" id="canvas">
     <p>Canvas is not supported in your browser</p>
   </canvas>
 <div>
   <div class="row">
     <div class="col-md-4">
+      <h2 class="tabTitle">Preços:</h2>
+      <ul>
+        <div>
+          <p><img src="'./assets/imgs/fechar.png'" alt=""></p>
+        </div>
+        <input [(ngModel)]="price1" type="text">
+        <input [(ngModel)]="price2" type="text">
+        <input [(ngModel)]="price3" type="text">
+        <input [(ngModel)]="price4" type="text">
+      </ul>
+    </div>
+    <div class="col-md-4">
       <h2 class="tabTitle">Guarnições:</h2>
       <ul>
         <div>
-          <input [(ngModel)]="guarn1" type="text">
           <p><img src="'./assets/imgs/fechar.png'" alt=""></p>
         </div>
+        <input [(ngModel)]="guarn1" type="text">
         <input [(ngModel)]="guarn2" type="text">
         <input [(ngModel)]="guarn3" type="text">
         <input [(ngModel)]="guarn4" type="text">
         <input [(ngModel)]="guarn5" type="text">
+        <input [(ngModel)]="guarn6" type="text">
       </ul>
     </div>
     <div class="col-md-4">
@@ -25,6 +38,8 @@
           <input [(ngModel)]="protein2" type="text">
           <input [(ngModel)]="protein3" type="text">
           <input [(ngModel)]="protein4" type="text">
+          <input [(ngModel)]="protein5" type="text">
+          <input [(ngModel)]="protein6" type="text">
       </ul>
     </div>
     <div class="col-md-4">
@@ -34,6 +49,24 @@
         <input [(ngModel)]="salad2" type="text">
         <input [(ngModel)]="salad3" type="text">
         <input [(ngModel)]="salad4" type="text">
+        <input [(ngModel)]="salad5" type="text">
+        <input [(ngModel)]="salad6" type="text">
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <h2 class="tabTitle">Bebidas</h2>
+      <ul>
+        <input [(ngModel)]="bebida1" type="text">
+        <input placeholder="R$" [(ngModel)]="bebida1p" type="text">
+        <input  [(ngModel)]="bebida2" type="text">
+        <input placeholder="R$" [(ngModel)]="bebida2p" type="text">
+        <input [(ngModel)]="bebida3" type="text">
+        <input placeholder="R$" [(ngModel)]="bebida3p" type="text">
+        <input [(ngModel)]="bebida4" type="text">
+        <input placeholder="R$" [(ngModel)]="bebida4p" type="text">
+        <input [(ngModel)]="bebida5" type="text">
+        <input placeholder="R$" [(ngModel)]="bebida5p" type="text">
       </ul>
     </div>
   </div>
